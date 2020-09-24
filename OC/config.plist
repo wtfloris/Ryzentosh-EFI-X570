@@ -178,6 +178,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<true/>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -212,6 +214,8 @@
 				<string>Contents/MacOS/Lilu</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -228,6 +232,8 @@
 				<string>Contents/MacOS/VirtualSMC</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -244,6 +250,8 @@
 				<string>Contents/MacOS/AppleALC</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -260,6 +268,8 @@
 				<string>Contents/MacOS/RealtekRTL8111</string>
 				<key>BundlePath</key>
 				<string>RealtekRTL8111.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -276,6 +286,8 @@
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -292,6 +304,8 @@
 				<string></string>
 				<key>BundlePath</key>
 				<string>Custom-USB-Map.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -308,6 +322,8 @@
 				<string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
 				<key>BundlePath</key>
 				<string>AMDRyzenCPUPowerManagement.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -324,6 +340,8 @@
 				<string>Contents/MacOS/SMCAMDProcessor</string>
 				<key>BundlePath</key>
 				<string>SMCAMDProcessor.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -339,6 +357,8 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -377,6 +397,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -405,6 +427,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -433,6 +457,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -461,6 +487,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -489,6 +517,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -517,6 +547,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -545,6 +577,8 @@
 				<data>AAAAAAAADwAAAAAAAAAAAA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -573,6 +607,8 @@
 				<data>AAAAAAAADwAAAAAA</data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -601,6 +637,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -629,6 +667,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -657,6 +697,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -685,6 +727,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -713,6 +757,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -741,6 +787,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -769,6 +817,8 @@
 				<data>//8AAAAAAP///wAAAAD/////////</data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -797,6 +847,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -825,6 +877,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -853,6 +907,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -881,6 +937,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -909,6 +967,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -937,6 +997,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>1</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -965,6 +1027,8 @@
 				<data>/wAAAAAAAAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -993,6 +1057,8 @@
 				<data>//8AAAAAAP8AAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1021,6 +1087,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1049,6 +1117,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1077,6 +1147,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1105,6 +1177,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1133,6 +1207,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1161,6 +1237,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1189,6 +1267,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1217,6 +1297,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1245,6 +1327,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -1273,6 +1357,8 @@
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
+				<key>Arch</key>
+				<string>Any</string>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -1307,6 +1393,17 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<true/>
+			<key>DisableLinkeditJettison</key>
+			<true/>
+		</dict>
+		<key>Scheme</key>
+		<dict>
+			<key>FuzzyMatch</key>
+			<true/>
+			<key>KernelArch</key>
+			<string>x86_64</string>
+			<key>KernelCache</key>
+			<string>Auto</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -1353,6 +1450,8 @@
 			<false/>
 			<key>Target</key>
 			<integer>67</integer>
+			<key>SerialInit</key>
+			<false/>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1391,6 +1490,18 @@
 			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>ApECID</key>
+			<integer>0</integer>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
+			<key>PasswordHash</key>
+			<data></data>
+			<key>PasswordSalt</key>
+			<data></data>
+			<key>SecureBootModel</key>
+			<string>Default</string>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1436,6 +1547,8 @@
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1507,6 +1620,8 @@
 			<string>C02D80ZVHX87</string>
 			<key>SystemUUID</key>
 			<string>94E3CC73-FCC8-4DB3-B719-73023E1E07F2</string>
+			<key>ProcessorType</key>
+			<integer>0</integer>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1531,6 +1646,8 @@
 			<integer>0</integer>
 			<key>MinVersion</key>
 			<integer>0</integer>
+			<key>GlobalConnect</key>
+			<false/>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -1599,6 +1716,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>UgaPassThrough</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1632,6 +1751,12 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
+			<key>AppleSecureBoot</key>
+			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
@@ -1661,6 +1786,8 @@
 				<false/>
 				<key>Size</key>
 				<integer>268435456</integer>
+				<key>Type</key>
+				<string>Reserved</string>
 			</dict>
 		</array>
 	</dict>

@@ -92,7 +92,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>DQAAAA==</data>
+				<data>DgAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>POT2</key>
@@ -157,6 +157,15 @@
 						<data>DQAAAA==</data>
 						<key>Comment</key>
 						<string>Rear USB 2.0</string>
+					</dict>
+					<key>PO14</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>DgAAAA==</data>
+						<key>Comment</key>
+						<string>Internal USB left</string>
 					</dict>
 				</dict>
 			</dict>
