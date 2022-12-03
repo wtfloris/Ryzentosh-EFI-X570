@@ -76,6 +76,8 @@
 	<dict>
 		<key>MmioWhitelist</key>
 		<array/>
+		<key>Patch</key>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -392,6 +394,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>BundlePath</key>
+				<string>AppleMCEReporterDisabler.kext</string>
+				<key>Arch</key>
+				<string>x86_64</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -408,6 +428,8 @@
 			<key>MinKernel</key>
 			<string></string>
 		</dict>
+		<key>Force</key>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -418,6 +440,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -425,6 +449,8 @@
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
@@ -963,17 +989,17 @@
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>0</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
@@ -982,7 +1008,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -991,12 +1017,12 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483714</integer>
+			<key>LogModules</key>
+			<string>*</string>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
 			<integer>3</integer>
-			<key>SerialInit</key>
-			<false/>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1009,6 +1035,8 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CustomOS</string>
 				<key>Path</key>
@@ -1019,12 +1047,8 @@
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>AuthRestart</key>
 			<false/>
 			<key>ApECID</key>
@@ -1071,16 +1095,18 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 npci=0x2000 alcid=1 agdpmod=pikera</string>
+				<string>keepsyms=1 debug=0x100 npci=0x2000 alcid=1 agdpmod=pikera darkwake=0</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>prev-lang:kbd</key>
 				<string>en-us:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1099,8 +1125,6 @@
 				<string>boot-args</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -1201,6 +1225,12 @@
 			<integer>5</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>1</integer>
+			<key>PointerPollMin</key>
+			<integer>0</integer>
+			<key>PointerPollMax</key>
+			<integer>0</integer>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1212,20 +1242,24 @@
 			<integer>0</integer>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
-			<key>AudioOut</key>
-			<integer>0</integer>
+			<key>AudioOutMask</key>
+			<integer>-1</integer>
 			<key>AudioSupport</key>
 			<false/>
-			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<key>DisconnectHda</key>
+			<false/>
 			<key>PlayChime</key>
 			<string>Disabled</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
-			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<key>MaximumGain</key>
+			<integer>-15</integer>
+			<key>MinimumAssistGain</key>
+			<integer>-30</integer>
+			<key>MinimumAudibleGain</key>
+			<integer>-128</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -1240,6 +1274,8 @@
 				<true/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1250,6 +1286,8 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1260,6 +1298,8 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Input</key>
