@@ -317,6 +317,8 @@
 				<true/>
 				<key>MinKernel</key>
 				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Arch</key>
@@ -982,6 +984,8 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HibernateSkipsPicker</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>LauncherOption</key>
@@ -1073,6 +1077,13 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array/>
@@ -1225,12 +1236,18 @@
 			<integer>5</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>1</integer>
-			<key>PointerPollMin</key>
+			<key>PointerDwellClickTimeout</key>
 			<integer>0</integer>
-			<key>PointerPollMax</key>
+			<key>PointerDwellDoubleClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellRadius</key>
 			<integer>0</integer>
 			<key>PointerPollMask</key>
 			<integer>-1</integer>
+			<key>PointerPollMax</key>
+			<integer>0</integer>
+			<key>PointerPollMin</key>
+			<integer>0</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
